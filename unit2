@@ -1,0 +1,43 @@
+s1 = 'hello'
+s2 = 'world'
+s3 = s1 + s2
+print (s3, len(s3))
+
+print (s3.count('o'), s3.count('l'))
+
+s4 = s3.replace ('o','uuu')
+print (s4, len(s4))
+
+s = 'what is this class omg'
+print (s[2]) #starts counting from 0, so 0=w
+print (s[-1]) #negative one counts backward, so -1=g
+
+for c in s: 
+	print (c, end='')
+print ()
+	# c means character, end='' means horizontally, if '.',then means every space  fill it with .
+
+position = 0 
+for c in s:
+	if c == 'i': print ('found i at position',position)
+	position += 1
+
+for position, c in enumerate(s): 
+	if c == 'i': print (position) 
+
+for i in range(len(s)):
+	print(i, s[i])
+
+print(s[:8]) #assume start at 0
+print('last 4', s[-4:]) #assume end at the end
+print (s[::-1]) #will go backward
+print (s) # print entire string
+
+
+nts =('ACGT')
+names = ('adenine','cytosine','guanine','thymine')
+
+for i in range (i):
+	print(nts[i], names[i])
+
+
