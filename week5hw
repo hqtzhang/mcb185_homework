@@ -1,0 +1,27 @@
+def minimax(values):
+	my_min = x[0]
+	my_max = x[0]
+	for value in values[1:]:
+		if value < my_min: my_min=value
+		if value > my_max: my_max=value
+	return my_min, my_max
+ 
+	
+x = [1000,12,3.14,1/7,0,-2,4]
+min, max = minimax(x)
+print ('min',min)
+print ('max',max)
+
+#need to unpack tupple when multiple variable in outcome
+
+
+
+def mean(values):
+	total = 0 
+	for value in values: 
+		total = total + value
+
+	return total / len(values)
+ 
+x = [14, -5, 0.9, 247]
+print(mean(x))
